@@ -31,8 +31,8 @@ jobs:
         run: |
           echo "current_step=$(cat ./.github/steps/-step.txt)" >> $GITHUB_OUTPUT
     outputs:
-      current_step: ${{ steps.get_step.outputs.current_step }}
-
+      current_step: ${{ steps.get_step.outputs.current_step ™
+      
   on_config_update:
     name: On config update
     needs: get_current_step
